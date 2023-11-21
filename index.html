@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>...</title>
+    <link type="image/x-icon" rel="shortcut icon" href="image/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="box__container">
+            <div class="box">
+                <h1 class="box__title">Лабораторная работа №12</h1>
+                <p class="box__text">Проверка выражения на модуль, введите в поля ввода: a, b ,c; только цифры:</p>
+                <div class="box__inputs-container">
+                    <input type="text" class="box__input" id="input-a" placeholder="a">
+                    <input type="text" class="box__input" id="input-b" placeholder="b">
+                </div>
+                <input type="text" class="box__input" id="input-c" placeholder="Модуль c">
+                <p class="box__text">
+                    Действия:
+                </p>
+                <input type="text" class="box__input" id="input-actions" placeholder="+, -, *, /">
+                <button class="box__btn" id="btn">Узнать</button>
+                
+                <fieldset>
+                    <legend>Ответ</legend>
+                    <p class="box__result" id="result">Здесь будет ваш ответ...</p>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
