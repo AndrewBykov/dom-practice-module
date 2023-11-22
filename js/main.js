@@ -16,14 +16,10 @@ function calculation(a, b, c, action) {
   let sum1 = eval(sum);
 
   if (action === '+' || action === '*' || action === '**') {
-    while (sum1 > numModule) {
-      sum1 = sum1 / 2;
-    }
-
     if (sum1 > numModule) {
-      return `Ваш ответ: ${sum} = ${Math.round(sum1)} (модуль: ${numModule})`;
+      return `Ваш ответ: ${sum} = ${sum1 % numModule} (модуль: ${numModule})`;
     } else {
-      return `Ваш ответ: ${sum} = ${Math.round(sum1)} (модуль: ${numModule})`;
+      return `Ваш ответ: ${sum} = ${sum1} (модуль: ${numModule})`;
     }
   } else {
     return 'Доступно всего лишь 4 действия (+, -, *, /).';
